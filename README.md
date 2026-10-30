@@ -49,6 +49,7 @@ We are **not** claiming to have invented vector memory. We *are* claiming someth
 Every meaningful user question → the agent **breathes in** (semantic search) → answers. New knowledge → **pulse-beat**: written out immediately, never hoarded.
 
 Full text: [MANIFEST.md](MANIFEST.md). Architecture: [docs/architecture.md](docs/architecture.md).
+Tiny context window (2K–8K)? See [docs/tiny-window.md](docs/tiny-window.md) — adapted for small windows.
 
 ---
 
@@ -62,7 +63,8 @@ pulse-memory/
 ├── docs/
 │   ├── architecture.md    # memory layers
 │   ├── proof.md           # the compaction survival test (live log)
-│   └── stack.md           # how to run the local stack
+│   ├── stack.md           # how to run the local stack
+│   └── tiny-window.md     # adapting Pulse to 2K–8K token windows
 └── scripts/
     ├── ingest.py          # one-time bulk ingest of the vault
     └── obsidian-sync.py   # live sync (watchdog) — edit → indexed in seconds
