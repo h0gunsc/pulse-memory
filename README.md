@@ -50,6 +50,8 @@ These are the honest, defensible differences — each is expanded with evidence 
 
 Every meaningful user question → the agent **breathes in** (semantic search) → answers. New knowledge → **pulse-beat**: written out immediately, never hoarded.
 
+![Pulse memory layers](docs/architecture.svg)
+
 Full text: [MANIFEST.md](MANIFEST.md). Architecture: [docs/architecture.md](docs/architecture.md).
 Tiny context window (2K–8K)? See [docs/tiny-window.md](docs/tiny-window.md) — adapted for small windows.
 

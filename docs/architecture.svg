@@ -1,0 +1,87 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 640" font-family="'JetBrains Mono', ui-monospace, Menlo, Consolas, monospace">
+  <defs>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#1e293b" stroke-width="0.5"/>
+    </pattern>
+    <marker id="arrowC" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#22d3ee"/>
+    </marker>
+    <marker id="arrowV" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#a78bfa"/>
+    </marker>
+    <marker id="arrowS" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#94a3b8"/>
+    </marker>
+  </defs>
+
+  <!-- background -->
+  <rect width="960" height="640" fill="#020617"/>
+  <rect width="960" height="640" fill="url(#grid)"/>
+
+  <!-- title -->
+  <text x="480" y="38" text-anchor="middle" font-size="19" font-weight="700" fill="#e2e8f0">Pulse — Memory Layers</text>
+  <text x="480" y="58" text-anchor="middle" font-size="11" fill="#64748b">visible · human-editable · local · $0 · compaction-proof</text>
+
+  <!-- ===== AGENT ===== -->
+  <rect x="350" y="92" width="260" height="86" rx="8" fill="#0f172a" opacity="0.94" stroke="#22d3ee" stroke-width="1.5"/>
+  <text x="480" y="118" text-anchor="middle" font-size="13" font-weight="700" fill="#22d3ee">AGENT</text>
+  <text x="480" y="138" text-anchor="middle" font-size="9" fill="#cbd5e1">hot memory = rules only</text>
+  <text x="480" y="153" text-anchor="middle" font-size="9" fill="#cbd5e1">skills = procedural layer</text>
+  <text x="480" y="168" text-anchor="middle" font-size="8" fill="#64748b">writes new knowledge out (pulse-beat)</text>
+
+  <!-- inhale arrow AGENT -> SUPERMEMORY -->
+  <line x1="480" y1="178" x2="480" y2="228" stroke="#22d3ee" stroke-width="1.5" marker-end="url(#arrowC)"/>
+  <text x="490" y="207" font-size="8" fill="#94a3b8">Q → inhale: search by meaning</text>
+
+  <!-- ===== SUPERMEMORY ===== -->
+  <rect x="350" y="232" width="260" height="82" rx="8" fill="#0f172a" opacity="0.94" stroke="#a78bfa" stroke-width="1.5"/>
+  <text x="480" y="260" text-anchor="middle" font-size="12" font-weight="700" fill="#a78bfa">SUPERMEMORY</text>
+  <text x="480" y="279" text-anchor="middle" font-size="9" fill="#cbd5e1">semantic search · embeddings</text>
+  <text x="480" y="296" text-anchor="middle" font-size="8" fill="#64748b">100% local · $0 · no LLM tokens</text>
+
+  <!-- open-note arrow SUPERMEMORY -> VAULT -->
+  <line x1="480" y1="314" x2="480" y2="358" stroke="#a78bfa" stroke-width="1.5" marker-end="url(#arrowV)"/>
+  <text x="490" y="339" font-size="8" fill="#94a3b8">open the note, point-by-point</text>
+
+  <!-- ===== OBSIDIAN VAULT ===== -->
+  <rect x="320" y="362" width="320" height="88" rx="8" fill="#0f172a" opacity="0.94" stroke="#22d3ee" stroke-width="1.5"/>
+  <text x="480" y="392" text-anchor="middle" font-size="13" font-weight="700" fill="#22d3ee">OBSIDIAN VAULT</text>
+  <text x="480" y="412" text-anchor="middle" font-size="9" fill="#cbd5e1">source of truth · .md files</text>
+  <text x="480" y="428" text-anchor="middle" font-size="8" fill="#64748b">sync watches edits → indexed in seconds</text>
+
+  <!-- ===== HUMAN ===== -->
+  <rect x="700" y="372" width="180" height="68" rx="8" fill="#0f172a" opacity="0.94" stroke="#94a3b8" stroke-width="1.5"/>
+  <text x="790" y="401" text-anchor="middle" font-size="11" font-weight="700" fill="#94a3b8">HUMAN EDITOR</text>
+  <text x="790" y="419" text-anchor="middle" font-size="8" fill="#cbd5e1">hand-edits the vault</text>
+  <text x="790" y="432" text-anchor="middle" font-size="8" fill="#64748b">owner of the memory</text>
+
+  <!-- dashed HUMAN -> VAULT -->
+  <line x1="700" y1="406" x2="640" y2="406" stroke="#94a3b8" stroke-width="1.2" stroke-dasharray="4,4" marker-end="url(#arrowS)"/>
+  <text x="666" y="398" text-anchor="middle" font-size="7" fill="#64748b">writes</text>
+
+  <!-- ===== SESSION SEARCH ===== -->
+  <rect x="90" y="430" width="176" height="66" rx="8" fill="#0f172a" opacity="0.94" stroke="#94a3b8" stroke-width="1.5"/>
+  <text x="178" y="458" text-anchor="middle" font-size="10" font-weight="700" fill="#94a3b8">SESSION SEARCH</text>
+  <text x="178" y="476" text-anchor="middle" font-size="8" fill="#cbd5e1">raw past sessions · keyword</text>
+
+  <!-- dashed fallback AGENT -> SESSION SEARCH -->
+  <path d="M 350 135 C 230 135 200 300 178 428" fill="none" stroke="#94a3b8" stroke-width="1.2" stroke-dasharray="4,4" marker-end="url(#arrowS)"/>
+  <text x="238" y="252" font-size="8" fill="#64748b">fallback recall</text>
+
+  <!-- ===== LEGEND ===== -->
+  <g transform="translate(250, 566)">
+    <rect x="0" y="0" width="14" height="14" rx="3" fill="#0f172a" stroke="#22d3ee" stroke-width="1.2"/>
+    <text x="20" y="12" font-size="8" fill="#94a3b8">agent / vault (human-controlled)</text>
+
+    <rect x="220" y="0" width="14" height="14" rx="3" fill="#0f172a" stroke="#a78bfa" stroke-width="1.2"/>
+    <text x="240" y="12" font-size="8" fill="#94a3b8">semantic search</text>
+
+    <rect x="370" y="0" width="14" height="14" rx="3" fill="#0f172a" stroke="#94a3b8" stroke-width="1.2"/>
+    <text x="390" y="12" font-size="8" fill="#94a3b8">external / fallback</text>
+
+    <line x1="480" y1="7" x2="510" y2="7" stroke="#94a3b8" stroke-width="1.5" stroke-dasharray="4,4" marker-end="url(#arrowS)"/>
+    <text x="518" y="12" font-size="8" fill="#94a3b8">human edit / fallback</text>
+  </g>
+
+  <text x="480" y="616" text-anchor="middle" font-size="9" fill="#475569">PAC0 production stack — running daily since 2026-06</text>
+</svg>
