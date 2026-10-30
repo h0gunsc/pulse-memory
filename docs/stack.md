@@ -9,6 +9,10 @@ The Pulse protocol needs three local pieces:
 
 Everything runs locally. No cloud, no LLM tokens spent on memory operations.
 
+> **This is not a design sketch.** Pulse is the exact stack that runs the PAC0 agent
+> every day: the vault, the supermemory server, and these two scripts are the live
+> production setup behind the months-long run documented in [docs/proof.md](proof.md).
+
 ---
 
 ## 1. Vault

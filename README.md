@@ -34,7 +34,9 @@ We then **proved it survives compaction**: in a live session at 127/256K tokens,
 | Survives compaction | Claimed, rarely shown | **Proven** on a live session |
 | Behavior change | A library you add | A **protocol** the agent follows |
 
-We are **not** claiming to have invented vector memory. We *are* claiming something the market doesn't sell: a **living discipline of memory for a human–machine pair**, with proof it works.
+These are the honest, defensible differences — each is expanded with evidence in
+[docs/comparison.md](docs/comparison.md), including where we *overlap* with existing work
+(e.g. obsidian-mind) so nobody can accuse us of overclaiming.
 
 ---
 
@@ -62,6 +64,7 @@ pulse-memory/
 ├── LICENSE                # MIT
 ├── docs/
 │   ├── architecture.md    # memory layers
+│   ├── comparison.md      # honest comparison vs Mem0/Zep/Letta/obsidian-mind
 │   ├── proof.md           # the compaction survival test (live log)
 │   ├── stack.md           # how to run the local stack
 │   └── tiny-window.md     # adapting Pulse to 2K–8K token windows
